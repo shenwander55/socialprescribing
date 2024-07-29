@@ -54,18 +54,12 @@
         .checkbox-list li {
             margin-bottom: 10px;
         }
-        /* 新添加的視頻相關樣式 */
-        .video-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-        }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 56.25%; /* 16:9 縱橫比 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
-            margin: 0 auto;
         }
         .video-container iframe {
             position: absolute;
@@ -114,16 +108,17 @@
                         <li><label><input type="radio" name="redemption"> 2張入園門票</label></li>
                         <li><label><input type="radio" name="redemption"> 2張手作體驗券</label></li>
                         <li><label><input type="radio" name="redemption"> 1張入園門票+1張體驗券</label></li>
-                     </li>
-</ol>
+                    </ul>
+                </li>
+            </ol>
 
             <h3>說明：</h3>
-                <ul>
+            <ul>
                 <li>手作體驗券可至園區內店家兌換手作活動，深度體驗傳統工藝之美!</li>
                 <li>具有身障身分：入園免費，兌換手作體驗券最划算!</li>
                 <li>具有敬老身分：推薦兌換2張入園門票</li>
                 <li>無以上兩種身分：推薦兌換2張門票。或門票自費，兌換手作體驗券，同享手工之樂!</li>
-</ul>
+            </ul>
 
             <h2>園區特色</h2>
             <ul>
@@ -154,23 +149,10 @@
                 <li>火車：至羅東火車站下車，於後站搭乘綠21公車。</li>
                 <li>客運：搭乘首都客運/國光客運/葛瑪蘭客運/大都會客運，至羅東轉運站下車，轉乘綠21公車。</li>
             </ul>
-        </div>
-    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var img = document.querySelector('.map-container img');
-            img.onload = function() {
-                console.log('地圖圖片成功加載');
-            };
-            img.onerror = function() {
-                console.error('地圖圖片加載失敗');
-            };
-        });
-<h2>影音介紹</h2>
-<div style="text-align: center; max-width: 800px; margin: 0 auto;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vsQDShacT5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+            <h2>影音介紹</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vsQDShacT5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
